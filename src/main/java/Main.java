@@ -8,6 +8,7 @@ public class Main {
         service.controller.checkLine(line);
         service.model.configPetShops();
         service.calcTotalPrice();
+        service.sortSequence();
         service.outputSequence();
     }
 }

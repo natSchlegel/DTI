@@ -1,6 +1,3 @@
-import Entities.PetShop;
-
-import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 

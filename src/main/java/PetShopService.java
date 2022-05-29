@@ -27,9 +27,11 @@ public class PetShopService {
             bestOffers.add(new BestOfferList(petshop.getName(),totalPrice, petshop.getDistance()));
         }
     }
-    public void outputSequence(){
+    public void sortSequence(){
         Comparator<BestOfferList> compareByPriceThenDistance = Comparator.comparing(BestOfferList::getTotalPrice).thenComparing(BestOfferList::getDistance);
         bestOffers.sort(compareByPriceThenDistance);
+    }
+    public void outputSequence(){
         for(BestOfferList bestOffer: bestOffers) {
             System.out.println("Nome do PetShop: " + bestOffer.getPetshopName() + " / Preço Total: " + bestOffer.getTotalPrice());
         }
