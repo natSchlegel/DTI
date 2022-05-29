@@ -16,3 +16,4 @@ Projeto desenvolvido no Maven usando Intelli J IDEA e Java 17.
 ## Decisões Tomadas
 
 - Tipo Double para todos os campos númericos e int para os dois campos referentes a números de cachorros para evitar erros de inserção e cálculo, respectivamente.
+- Lista para guardar os dados dos petshops, tornando o projeto escalável, e lista na comparação de ofertas para ser usado o método .comparing sem necessidade de implementar o Comparable<>. 
