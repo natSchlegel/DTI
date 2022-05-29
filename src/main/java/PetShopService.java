@@ -11,8 +11,10 @@ public class PetShopService {
     private double bigPetsPrice;
     private double totalPrice;
     private ArrayList<BestOfferList> bestOffers = new ArrayList<BestOfferList>();
-    PetShopModel model = new PetShopModel();
-    PetShopController controller = new PetShopController();
+    //PetShopModel model =
+
+    PetShopController controller = PetShopController.getInstance();
+    PetShopModel model = PetShopModel.getInstance();
 
     public void calcTotalPrice() {
         for (PetShop petshop : model.getPetShopList()) {

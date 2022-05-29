@@ -3,6 +3,18 @@ import java.time.format.DateTimeFormatter;
 
 public class PetShopController {
 
+    private static PetShopController intance;
+    static PetShopController getInstance() {
+        if (intance == null) {
+            intance = new PetShopController();
+        }
+        return intance;
+    }
+
+    private PetShopController()	{
+        super();
+    }
+
     private LocalDate date;
     private int smallPets;
     private int bigPets;

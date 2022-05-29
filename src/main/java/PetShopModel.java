@@ -4,6 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PetShopModel {
+
+    private static PetShopModel intance;
+    static PetShopModel getInstance() {
+        if (intance == null) {
+            intance = new PetShopModel();
+        }
+        return intance;
+    }
+
+    private PetShopModel()	{
+        super();
+    }
+
     private List<PetShop> petShopList = new ArrayList<>();
 
     public void addNewPetShop(String name, Double distance, Double smallPetsPrice, Double bigPetsPrice, Double weekendSmallPetsPrice, Double weekendBigPetsPrice){

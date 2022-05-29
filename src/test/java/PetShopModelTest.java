@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class PetShopModelTest extends TestCase {
 
-    PetShopModel model = new PetShopModel();
+    PetShopModel model = PetShopModel.getInstance();
 
     @Test
     public void testConfigPetShops() {

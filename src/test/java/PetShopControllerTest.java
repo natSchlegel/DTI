@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class PetShopControllerTest extends TestCase {
 
-    PetShopController controller = new PetShopController();
+    PetShopController controller = PetShopController.getInstance();
 
     @Test
     public void testCheckLine() {
