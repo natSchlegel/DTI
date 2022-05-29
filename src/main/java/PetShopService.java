@@ -11,7 +11,6 @@ public class PetShopService {
     private double bigPetsPrice;
     private double totalPrice;
     private ArrayList<BestOfferList> bestOffers = new ArrayList<BestOfferList>();
-    //PetShopModel model =
 
     PetShopController controller = PetShopController.getInstance();
     PetShopModel model = PetShopModel.getInstance();
